@@ -5,6 +5,8 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -20,6 +22,8 @@ class MyApp extends StatelessWidget {
 // ======================
 
 class WelcomePage extends StatelessWidget {
+  const WelcomePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -104,6 +108,8 @@ class WelcomePage extends StatelessWidget {
 // ======================
 
 class DashboardPage extends StatefulWidget {
+  const DashboardPage({super.key});
+
   @override
   _DashboardPageState createState() => _DashboardPageState();
 }
@@ -251,7 +257,7 @@ class _DashboardPageState extends State<DashboardPage> {
 
                     padding: EdgeInsets.symmetric(
                       horizontal: 30,
-                      vertical: 15,
+                      vertical: 16,
                     ),
                   ),
 
@@ -298,7 +304,7 @@ class _DashboardPageState extends State<DashboardPage> {
 
             SizedBox(height: 20),
 
-            Container(
+            SizedBox(
               height: 300,
 
               child: ListView.builder(
